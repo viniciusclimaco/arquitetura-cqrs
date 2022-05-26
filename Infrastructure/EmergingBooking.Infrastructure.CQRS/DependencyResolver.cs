@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace EmergingBooking.Infrastructure.CQRS
+{
+    internal class DependencyResolver
+    {
+        private readonly IServiceProvider _serviceProvider;
+        public DependencyResolver(IServiceProvider serviceProvider)
+        {
+            _serviceProvider = serviceProvider;
+        }
+
+        public TDependencyType Resolve<TDependencyType>()
+        {
+            return _serviceProvider.GetRequiredService<TDependencyType>();
+        }
+
+        public IEnumerable<TDependencyType> ResolveAll<TDependencyType>()
+        {
+            return _serviceProvider.GetServices<TDependencyType>();
+        }
+        
+    }
+}

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\EmergingBooking.Infrastructure.CQRS\EmergingBooking.Infrastructure.CQRS.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\EmergingBooking.Infrastructure.KafkaProducer\EmergingBooking.Infrastructure.KafkaProducer.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\EmergingBooking.Infrastructure.RavenDB\EmergingBooking.Infrastructure.RavenDB.csproj" />
+  </ItemGroup>
+
+</Project>
