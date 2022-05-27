@@ -1,15 +1,10 @@
 ﻿using Confluent.Kafka;
 using Polly;
 using Polly.Retry;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EmergingBooking.Infrastructure.KafkaProducer
 {
-    internal class KafkaProducer<TKeyType, TEntity> : IDisposable
+    public class KafkaProducer<TKeyType, TEntity> : IDisposable
     {
         private readonly AsyncRetryPolicy<DeliveryResult<TKeyType, TEntity>> _kafkaRetryPolicy;
         private readonly string _topicName;

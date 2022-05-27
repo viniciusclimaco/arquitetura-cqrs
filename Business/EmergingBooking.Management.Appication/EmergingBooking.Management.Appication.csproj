@@ -12,4 +12,10 @@
     <ProjectReference Include="..\..\Infrastructure\EmergingBooking.Infrastructure.RavenDB\EmergingBooking.Infrastructure.RavenDB.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.8.2" />
+    <PackageReference Include="MonoidSharpDotNet" Version="0.0.1" />
+    <PackageReference Include="RavenDB.Client" Version="5.3.102" />
+  </ItemGroup>
+
 </Project>

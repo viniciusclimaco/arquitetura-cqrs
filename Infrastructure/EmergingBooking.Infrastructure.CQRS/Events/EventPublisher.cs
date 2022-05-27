@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EmergingBooking.Infrastructure.CQRS.Events
+﻿namespace EmergingBooking.Infrastructure.CQRS.Events
 {
     internal class EventPublisher : IEventPublisher
     {

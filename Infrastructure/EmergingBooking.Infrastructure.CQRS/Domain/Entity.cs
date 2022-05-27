@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EmergingBooking.Infrastructure.CQRS.Domain
+﻿namespace EmergingBooking.Infrastructure.CQRS.Domain
 {
     public class Entity
     {
         public Entity(Guid? identifier)
         {
             Identifier = identifier ?? Guid.NewGuid();
-
         }
 
         public Guid Identifier { get; set; }
